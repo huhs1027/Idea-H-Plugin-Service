@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+</head>
+<body>
+
+<script src="layui/layui.js"></script>
+
+服务启动.
+
+<script>
+    //从 layui 2.6.0 开始，由于内置模块会一次性加载，因此不必再执行 layui.use() 来加载对应模块，直接使用即可：
+    !function () {
+        var layer = layui.layer
+            , form = layui.form;
+
+        layer.msg('Hello World');
+    }();
+</script>
+
+</body>
+</html>
